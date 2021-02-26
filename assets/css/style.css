@@ -1236,7 +1236,10 @@ section {
 }
 
 #testimonials .section-header {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: black;
+    
 }
 
 #testimonials .testimonial-item {
@@ -1562,6 +1565,7 @@ section {
   margin-bottom: 30px;
 }
 
+
 #footer .footer-top .footer-info h3 {
   font-size: 34px;
   margin: 0 0 20px 0;
@@ -1664,6 +1668,7 @@ section {
   margin-bottom: 30px;
 }
 
+
 #footer .footer-top .footer-contact p {
   line-height: 26px;
 }
@@ -1703,3 +1708,59 @@ section {
   font-size: 13px;
   color: #ddd;
 }
+
+
+.footer-col {
+    margin-left: 6%;
+}
+
+
+/*contact form*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body { background:rgb(30,30,40); }
+form { max-width:420px; margin:25px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 13px;
+  background-color: transparent;
+  border:1px solid  #18d26e;
+  transition: all 0.3s;
+  padding: 7px;
+  margin-bottom: 15px;
+  width:90%;
+  height: 100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 500px;
+  line-height: 100%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 90%;
+  background:#18d26e;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:600;
+}
+[type="submit"]:hover { background:#038817; }
