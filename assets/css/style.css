@@ -8,6 +8,16 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+html::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+
 body {
   background: #fff;
   color: #666666;
@@ -1239,6 +1249,13 @@ section {
   margin-bottom: 40px;
 }
 
+@media (min-width: 992px) {
+  #testimonials .section-header {
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+}
+
 #testimonials .testimonial-item {
   text-align: center;
 }
@@ -1253,14 +1270,14 @@ section {
 #testimonials .testimonial-item h3 {
   font-size: 20px;
   font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: rgb(255, 255, 255);s
+  margin: 15px 0 10px 0;
+  color: rgb(255, 255, 255);
 }
 
 #testimonials .testimonial-item h4 {
   font-size: 14px;
   color: rgb(226, 226, 226);
-  margin: 0 0 15px 0;
+  margin: 0 0 25px 0;
 }
 
 #testimonials .testimonial-item .quote-sign-left {
