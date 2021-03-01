@@ -718,10 +718,14 @@ section {
 /* About Us Section
 --------------------------------*/
 #upcoming-events {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background: linear-gradient(rgba(27, 25, 25, 0.55),rgba(27, 25, 25, 0.55)) , url(../../img/about-bg.jpg);
+  background-attachment: fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
+  
+ 
+  
 }
 
 #upcoming-events::before {
@@ -730,11 +734,10 @@ section {
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.92);
+  height:200px;
+  background: rgba(126, 126, 126, 0.7);
   z-index: 9;
 }
-
 #upcoming-events .container {
   position: relative;
   z-index: 10;
