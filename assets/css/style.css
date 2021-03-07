@@ -766,19 +766,25 @@ section {
 }
 
 #upcoming-events .about-col {
-  background: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
-  margin-bottom: 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
+    margin: 20px auto 0px auto;
+    height: 50vh;
+    object-position: center;
+    width: 20vw;
+    position: inherit;
+
 }
 
-#upcoming-events .about-col .img {
-  position: relative;
+#upcoming-events .about-col .img-fluid {
+    position: relative;
+    width: 20vw;
+    height: 37vh;
+    object-fit: fill;
+    border-radius: 20px;
 }
 
-#upcoming-events .about-col .img img {
-  border-radius: 4px 4px 0 0;
-}
 
 #upcoming-events .about-col .icon {
   width: 64px;
