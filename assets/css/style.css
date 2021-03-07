@@ -1281,8 +1281,9 @@ section {
 --------------------------------*/
 #testimonials {
   padding: 105px 0;
-  background-color: #1f2224;
+  background-color: rgba(0, 0, 0, 1);
 }
+
 
 #testimonials .section-header {
   margin-bottom: 40px;
@@ -1367,12 +1368,6 @@ section {
 #testimonials .owl-dot.active {
   background-color: #18d26e;
 }
-
-.testimonials-carousel {
-    background-color: #2f7676d9;
-    background: linear-gradient(144deg, #a66acc8f, #1f6a84c2);
-    border-radius: 25px;
-    padding: 15px;
 
 /* Team Section
 
