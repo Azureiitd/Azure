@@ -1281,7 +1281,7 @@ section {
 --------------------------------*/
 #testimonials {
   padding: 105px 0;
-  background-color: #1f2224;
+  background-color: rgba(0, 0, 0, 1); ;
 }
 
 
@@ -1369,13 +1369,6 @@ section {
   background-color: #18d26e;
 }
 
-#testimonial .testimonials-carousel {
-    background-color: #2f7676d9;
-    background: linear-gradient(144deg,#a66acc54, #1f6a8457) ,  url(../../img/testimonial_bg.jpg);
-    border-radius: 25px;
-    padding: 15px;
-    object-fit:fill;
-}
 
 
 /* Team Section
