@@ -115,18 +115,19 @@
   <script type="text/javascript">
       function generateCard(eventTitle,imgSrc,mainLink) {
 
-        let card="<div class='col-md-4' data-aos='fade-up' data-aos-delay='100'> <div class='about-col'>"
+        let card="<div class='col-md-4' data-aos='fade-up' data-aos-delay='100'> <div class='about-col'><a href='"+mainLink+"'>"
         if (imgSrc) {
           card+=" <div class='img'> <img src='"+imgSrc+"' alt='' class='img-fluid'>  <div class='icon'><i class='ion-ios-speedometer-outline'></i></div>";
         }
 
         card+="</div><h2 class='title'>"
-            if (mainLink) {
-              card+="<a target='_blank' href='"+mainLink+"'  rel='noopener noreferrer'>"+eventTitle+"</a></h2><p></p></div></div>";
-            }
-            else{
-              card+="<a target='_blank' rel='noopener noreferrer'>"+eventTitle+"</a></h2><p></p></div></div>";
-            }
+            // if (mainLink) {
+            //   card+="<a target='_blank' href='"+mainLink+"'  rel='noopener noreferrer'>"+eventTitle+"</a></h2><p></p></div></div>";
+            // }
+            // else{
+            //   card+="<a target='_blank' rel='noopener noreferrer'>"+eventTitle+"</a></h2><p></p></div></div>";
+            // }
+            card+="<a target='_blank' href='"+mainLink+"'  rel='noopener noreferrer'>"+eventTitle+"</a></h2><p></p></div></div>";
         return card;
       }
       function getEvents() {
