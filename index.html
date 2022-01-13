@@ -104,51 +104,40 @@
     
   
 <div class="row about-cols">
-  <main class="container my-4 stars">
-    <div id="stars" style="z-index: -1;"></div>
-    
-    <h6 id="eventsH" class="text-center text-white" style="display: none;"></h6>
-    <div id="events" class="row row-cols-md-4 g-4 pt-5"></div>
-    
-  </main>
-  <script src="main.js"></script>
-  <script type="text/javascript">
-      function generateCard(eventTitle,imgSrc,mainLink) {
+  <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+    <div class="about-col">
+      <div class="img">
+        <img src="img/Events/rangoli Competition (1).jpeg" alt="" class="img-fluid">
+        <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+      </div>
+      <h2 class="title"><a href="https://bit.ly/3GMaOeN" target="_blank" rel="noopener noreferrer">Rangoli Making Event</a></h2>
+      <p>
+      </p>
+    </div>
+  </div>
 
-        let card="<div class='col-md-4' data-aos='fade-up' data-aos-delay='100'> <div class='about-col'>"
-        if (imgSrc) {
-          card+=" <div class='img'> <img src='"+imgSrc+"' alt='' class='img-fluid'>  <div class='icon'><i class='ion-ios-speedometer-outline'></i></div>";
-        }
+  <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+    <div class="about-col">
+      <div class="img">
+        <img src="img/Events/Still-life.jpeg" alt="" class="img-fluid">
+        <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+      </div>
+      <h2 class="title"><a href="https://docs.google.com/document/d/1HNMRrWAU5oLZD3UUXrvfH3eyQzHH-nJF49iGFUx0A00/edit?usp=sharing" target="_blank" rel="noopener noreferrer"> STILL LIFE SKETCHING COMPETITION</a></h2>
+     
+    </div>
+  </div>
 
-        card+="</div><h2 class='title'>"
-            if (mainLink) {
-              card+="<a target='_blank' href='"+mainLink+"'  rel='noopener noreferrer'>"+eventTitle+"</a></h2><p></p></div></div>";
-            }
-            else{
-              card+="<a target='_blank' rel='noopener noreferrer'>"+eventTitle+"</a></h2><p></p></div></div>";
-            }
-        return card;
-      }
-      function getEvents() {
-        let Sheet = new XMLHttpRequest();
-        Sheet.open("GET","https://docs.google.com/spreadsheets/d/1isP4A9mT6zAZpfyrh61oMVDaw_OWzDrr-UhAp2aPpDU/export?format=tsv",false);
-        Sheet.onload = () => {
-          let values=Sheet.responseText;
-          document.getElementById('stars').style="display:block;";
-          let rows=values.split('\r');
-          eventsstr="";
-          rows.forEach(r=> {
-            cols=r.split('\t');
-            eventsstr+=generateCard(cols[0],cols[1],cols[2]);
-          })
-          document.getElementById('events').innerHTML=eventsstr;
-        }
-        Sheet.send(null);
-      } 
-      getEvents();
-    </script>
-
-  
+  <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+    <div class="about-col">
+      <div class="img">
+        <img src="img/Kirigami/main_poster.jpeg" alt="" class="img-fluid">
+        <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+      </div>
+      <h2 class="title"><a href="https://docs.google.com/document/d/1TE96oZe2icVBnEzLw8peVUQ-hRpsbzthb0ao0gm1rKM/edit?usp=drivesdk" target="_blank" rel="noopener noreferrer">KIRIGAMI COMPETITION</a></h2>
+      <p>
+      </p>
+    </div>
+ </div>
 </div>
 
 <!-------->
@@ -156,11 +145,30 @@
     <!------------>
     <div class="container" data-aos="fade-up">
 
-      <header class="section-header">
-      </header>
+        <div class="row about-cols" style="margin-top: 25px;">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/Events/Paper craft.jpeg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="https://drive.google.com/file/d/1_XUEjReJm1Sr1ybAJtyDwPYj5GHHcd-B/view?usp=sharing" target="_blank" rel="noopener noreferrer">PAPER CRAFTS WORKSHOP</a></h2>
+              <p>
+              </p>
+            </div>
+          </div>
 
-      
-
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/Events/Mask painting.jpeg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#" target="_blank" rel="noopener noreferrer">MASK PAINTING EVENT</a></h2>
+              <p>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -183,7 +191,7 @@
           <div class="col-lg-3 col-md-6 footer-col">
             <h4>Contact Us</h4>
                <center>
-              <form action="https://docs.google.com/forms/d/e/1FAIpQLSfye1LiyyouEn_GJiXaQGP-W6BTUPhWWPHyGmvtIuZmGUXOqw/formResponse" method="post"  target="_blank">      
+              <form style = "margin-left: 0;" action="https://docs.google.com/forms/d/e/1FAIpQLSfye1LiyyouEn_GJiXaQGP-W6BTUPhWWPHyGmvtIuZmGUXOqw/formResponse" method="post"  target="_blank">      
                   <input name="entry.1345873462" type="text" class="feedback-input" placeholder="Name" />   
                   <input name="entry.787418921" type="text" class="feedback-input" placeholder="Email" />
                   <input name="entry.1473426120" type="text" class="feedback-input" placeholder="Phone no." />
@@ -238,6 +246,50 @@
       </div>
     </div>
   </footer><!-- End Footer -->
+  <main class="container my-4 stars">
+    <div id="stars" style="z-index: -1;"></div>
+    
+    <h6 id="eventsH" class="text-center text-white" style="display: none;"></h6>
+    <div id="events" class="row row-cols-md-4 g-4 pt-5"></div>
+    
+  </main>
+  <script src="main.js"></script>
+  <script type="text/javascript">
+      function generateCard(eventTitle,imgSrc,mainLink) {
+
+        let card="<div class='col-md-4' data-aos='fade-up' data-aos-delay='100'> <div class='about-col'>"
+        if (imgSrc) {
+          card+=" <div class='img'> <img src='"+imgSrc+"' alt='' class='img-fluid'>  <div class='icon'><i class='ion-ios-speedometer-outline'></i></div>";
+        }
+
+        card+="</div><h2 class='title'>"
+            if (mainLink) {
+              card+="<a target='_blank' href='"+mainLink+"'  rel='noopener noreferrer'>"+eventTitle+"</a></h2><p></p></div></div>";
+            }
+            else{
+              card+="<a target='_blank' rel='noopener noreferrer'>"+eventTitle+"</a></h2><p></p></div></div>";
+            }
+        return card;
+      }
+      function getEvents() {
+        let Sheet = new XMLHttpRequest();
+        Sheet.open("GET","https://docs.google.com/spreadsheets/d/1isP4A9mT6zAZpfyrh61oMVDaw_OWzDrr-UhAp2aPpDU/export?format=tsv",false);
+        Sheet.onload = () => {
+          let values=Sheet.responseText;
+          document.getElementById('stars').style="display:block;";
+          let rows=values.split('\r');
+          eventsstr="";
+          rows.forEach(r=> {
+            cols=r.split('\t');
+            eventsstr+=generateCard(cols[0],cols[1],cols[2]);
+          })
+          document.getElementById('events').innerHTML=eventsstr;
+        }
+        Sheet.send(null);
+      } 
+      getEvents();
+    </script>
+
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <!-- Uncomment below i you want to use a preloader -->
